@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "DM Sans", sans-serif;
+  @apply text-gray-500;
+}
+
+.accordion-simple > .active {
+  display: block;
+}
+
+.accordion__faq .inactive {
+  display: none;
+}
+
+.accordion__faq__item {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.accordion__faq__heading {
+  cursor: pointer;
+}
+
+.accordion__faq__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion__faq__question h3 {
+  margin: 0;
+}
+
+.accordion__faq__question .verticle {
+  font-size: 24px;
+  margin-left: 10px;
+}
